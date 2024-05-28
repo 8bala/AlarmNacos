@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: alert-nacos
+  cloud:
+    nacos:
+      config:
+        server-addr:  ${middleware.host}:8848
+        file-extension: yml
+        timeout: 30000
+        username: nacos
+        password: nacos
+        group: CMS
+      discovery:
+        server-addr:  ${middleware.host}:8848
+        username: nacos
+        password: nacos
+        enabled: true
+        group: CMS
+  profiles:
+    active: test
+
+middleware:
+  host: 10.10.153.186

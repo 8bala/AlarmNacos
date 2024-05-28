@@ -1,0 +1,19 @@
+logging:
+  level:
+    com.neusoft.mid.msf: DEBUG
+    com.alibaba: ERROR
+
+server:
+  port: 18889
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+push:
+  address: 10.33.28.248:9100
+
+alert:
+  nacos:
+    groups: CMS,MASS,DEFAULT_GROUP
