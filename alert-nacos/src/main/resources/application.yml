@@ -12,7 +12,7 @@ management:
       show-details: always
 
 push:
-  address: 10.33.28.248:9100
+  address: 127.0.0.1:9100
 
 alert:
   nacos:
